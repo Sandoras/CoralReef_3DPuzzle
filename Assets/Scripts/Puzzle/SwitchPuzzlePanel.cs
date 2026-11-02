@@ -2,46 +2,27 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-// [Flags]
-// public enum SwitchMask
-// {
-//     None = 0,
-//     A = 1 << 0,
-//     B = 1 << 1,
-//     C = 1 << 2,
-//     D = 1 << 3,
-//     E = 1 << 4,
-
-// }
 
 public class SwitchPuzzlePanel : MonoBehaviour
 {
     [Header("Button Setup")]
-    // private GameObject _switch1;
-    // private GameObject _switch2;
-    // private GameObject _switch3;
-    // private GameObject _switch4;
-    // private GameObject _switch5;
-
     [SerializeField] private List<PuzzleSwitch> switches = new List<PuzzleSwitch>();
 
     //public int currentCode = 0b01101;
-    private readonly int targetCode;
+    [SerializeField] private int targetCode = 0b01101;
 
-    public void ToggleSwitch(int switchIndex)
+    [SerializeField] private int currentInputCode;
+
+    void Update()
     {
-        //currentCode() ^= (1 << switchIndex);
 
+        currentInputCode = currentCode();
         if (IsSolved())
         {
             print("Win");
         }
-    }
 
-    // public void Reset()
-    // {
-    //     currentCode() = 0;
-    // }
+    }
 
     public bool IsSolved()
     {
@@ -55,7 +36,7 @@ public class SwitchPuzzlePanel : MonoBehaviour
         {
             if (switches[i].IsOn)
             {
-                code |= (1 << i);
+                code |= (1 << (switches.Count - 1 - i));
             }
         }
 

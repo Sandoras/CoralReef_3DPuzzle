@@ -10,17 +10,6 @@ public class TriggerTagCheck : MonoBehaviour
 
     public bool IsAnyObjectInside => objectsInside.Count > 0;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     void OnTriggerEnter(Collider other)
     {
@@ -28,6 +17,12 @@ public class TriggerTagCheck : MonoBehaviour
             return;
 
         objectsInside.Add(other.gameObject);
+    }
+    void OnTriggerExit(Collider other)
+    {
+        if (!IsAllowedTag(other.tag))
+            return;
+        objectsInside.Remove(other.gameObject);
     }
 
     private bool IsAllowedTag(string tag)
