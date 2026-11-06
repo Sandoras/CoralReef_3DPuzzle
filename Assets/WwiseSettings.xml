@@ -3,8 +3,8 @@
   <CopySoundBanksAsPreBuildStep>true</CopySoundBanksAsPreBuildStep>
   <GenerateSoundBanksAsPreBuildStep>false</GenerateSoundBanksAsPreBuildStep>
   <WwiseStreamingAssetsPath>Audio/GeneratedSoundBanks</WwiseStreamingAssetsPath>
-  <RootOutputPath>../../../../../../../Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/WwiseProjects/CoralReef/GeneratedSoundBanks/</RootOutputPath>
-  <CreatedPicker>false</CreatedPicker>
+  <RootOutputPath>StreamingAssets/Audio/GeneratedSoundBanks</RootOutputPath>
+  <CreatedPicker>true</CreatedPicker>
   <CreateWwiseGlobal>true</CreateWwiseGlobal>
   <CreateWwiseListener>true</CreateWwiseListener>
   <ObjectReferenceAutoCleanup>true</ObjectReferenceAutoCleanup>
@@ -13,14 +13,14 @@
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise_2025.1.12.9287/Wwise.app</WwiseInstallationPathMac>
   <WwiseInstallationPathWindows />
-  <WwiseProjectPath>../../../../../../../Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/WwiseProjects/CoralReef/CoralReef.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../../../../../../../../Documents/WwiseProjects/CoralReef/CoralReef.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
-  <WaapiPort>8080</WaapiPort>
+  <WaapiPort>8085</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>
   <AutoSyncWaapi>true</AutoSyncWaapi>
   <WaapiChangePending>false</WaapiChangePending>
   <InstallationWasRequested>false</InstallationWasRequested>
-  <UseGitRepository>true</UseGitRepository>
+  <UseGitRepository>false</UseGitRepository>
   <PackageSource />
   <AddressableBankFolder>WwiseData/Bank</AddressableBankFolder>
   <UseCustomBuildScript>false</UseCustomBuildScript>

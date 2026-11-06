@@ -10,6 +10,10 @@ public class MoveAndRespawn : MonoBehaviour
     [SerializeField] private Vector3 _startPosition;
 
     [SerializeField] private float _moveSpeed;
+
+    public bool CanMove;
+    public bool RespawnOnEnd;
+
     void Awake()
     {
         _startPosition = transform.position;
@@ -21,11 +25,17 @@ public class MoveAndRespawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, _endPosition, _moveSpeed * Time.deltaTime);
-
-        if (transform.position == _endPosition)
+        if (CanMove)
         {
-            transform.position = _startPosition;
+            transform.position = Vector3.MoveTowards(transform.position, _endPosition, _moveSpeed * Time.deltaTime);
+
+            if (transform.position == _endPosition)
+            {
+                if (RespawnOnEnd)
+                { transform.position = _startPosition; }
+
+                else { CanMove = false; }
+            }
         }
 
 

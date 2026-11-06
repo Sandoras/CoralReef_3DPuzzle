@@ -13,13 +13,16 @@ public class SwitchPuzzlePanel : MonoBehaviour
 
     [SerializeField] private int currentInputCode;
 
+    public MoveAndRespawn DoorScript;
+
     void Update()
     {
 
         currentInputCode = currentCode();
         if (IsSolved())
         {
-            print("Win");
+            //print("Win");
+            DoorScript.CanMove = true;
         }
 
     }
