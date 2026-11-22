@@ -13,8 +13,33 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_CAT = 2690797150U;
+        static const AkUniqueID PLAY_DRUMS = 4062567473U;
+        static const AkUniqueID PLAY_PHONE = 190234274U;
         static const AkUniqueID PLAY_SANDNOISEAUDIO = 3182547836U;
+        static const AkUniqueID PLAY_SYNTH = 1710256744U;
     } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace SWITCHPUZZLE
+        {
+            static const AkUniqueID GROUP = 1159584269U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INSIDESPHERE = 3343693566U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OUTSIDESPHERE = 2570552141U;
+            } // namespace STATE
+        } // namespace SWITCHPUZZLE
+
+    } // namespace STATES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID ISPLAYERINSIDE = 2559712226U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
@@ -25,7 +50,14 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
+        static const AkUniqueID SWITCHPUZZLE = 1159584269U;
     } // namespace BUSSES
+
+    namespace AUX_BUSSES
+    {
+        static const AkUniqueID CLEAN = 1754255532U;
+        static const AkUniqueID DUCKED = 298685105U;
+    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

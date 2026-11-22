@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52966121cb4624131b81703bf4531ecf, type: 3}
+  m_Name: 31D18CEC-EA72-43F6-A987-F1239E71A53A
+  m_EditorClassIdentifier: AK.Wwise.Unity.API.WwiseTypes::WwiseEventReference
+  objectName: Play_Synth
+  id: 1710256744
+  guid: 31D18CEC-EA72-43F6-A987-F1239E71A53A
+  IsInUserDefinedSoundBank: 1
